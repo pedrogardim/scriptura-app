@@ -1,14 +1,13 @@
 "use client";
 
-import { Button } from "@repo/ui";
-
-import styles from "../styles/index.module.css";
+import { config } from "@repo/common";
+import { Button } from "@/components/ui";
 
 export default function Web() {
   return (
-    <div className={styles.container}>
-      <h1>Web</h1>
-      <Button onClick={() => console.log("Pressed!")} text="Boop" />
+    <div className="bg-slate-800 flex flex-1 flex-col justify-center items-center h-screen text-white">
+      <span className="font-bold mb-5 text-3xl">Native</span>
+      <Button label="lol" />
     </div>
   );
 }

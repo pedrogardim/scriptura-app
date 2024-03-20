@@ -18,4 +18,13 @@ config.resolver.nodeModulesPaths = [
 // 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
 config.resolver.disableHierarchicalLookup = true;
 
+// Ensure that Metro resolves .native.js(x) files first, then .js(x)
+config.resolver.sourceExts = [
+  "native.js",
+  "native.jsx",
+  "js",
+  "jsx",
+  ...config.resolver.sourceExts,
+];
+
 module.exports = config;

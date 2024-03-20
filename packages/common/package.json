@@ -1,7 +1,6 @@
 {
-  "name": "@repo/typescript-config",
+  "name": "@repo/common",
   "version": "0.0.0",
-  "main": "src/index.ts",
   "private": true,
   "publishConfig": {
     "access": "public"
