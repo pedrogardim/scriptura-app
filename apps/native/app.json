@@ -23,6 +23,9 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
+    },
+    "experiments": {
+      "tsconfigPaths": true
     }
   }
 }
