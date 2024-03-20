@@ -26,6 +26,8 @@
     },
     "experiments": {
       "tsconfigPaths": true
-    }
+    },
+    "scheme": "scriptura",
+    "plugins": ["expo-router"]
   }
 }
