@@ -1,33 +1,22 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { Button } from "@repo/ui";
+
+import { config } from "@repo/common";
 
 export default function Native() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Native</Text>
-      <Button
-        onClick={() => {
+    <View className="bg-slate-800 flex-1 justify-center items-center">
+      <Text className="font-bold mb-5 text-3xl text-white">Native</Text>
+      <TouchableOpacity
+        className="bg-slate-900 p-4 rounded-md"
+        onPress={() => {
           console.log("Pressed!");
           alert("Pressed!");
         }}
-        text="Boop"
-      />
+      >
+        <Text className="text-white">{config.test}</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  header: {
-    fontWeight: "bold",
-    marginBottom: 20,
-    fontSize: 36,
-  },
-});
