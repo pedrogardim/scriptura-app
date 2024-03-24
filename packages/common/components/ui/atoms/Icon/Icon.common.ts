@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import MaterialCommunityIcon from "@expo/vector-icons/MaterialCommunityIcons";
 import { Icon as VectorIconsIconType } from "@expo/vector-icons/build/createIconSet";
 
