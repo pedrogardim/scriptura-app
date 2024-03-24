@@ -1,5 +1,5 @@
 import { TouchableOpacity, Text } from "react-native";
-import type { ButtonType } from "@repo/common/components";
+import type { ButtonType } from "./Button.common";
 
 export const Button: ButtonType = ({
   primary = false,

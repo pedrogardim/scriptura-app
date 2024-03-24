@@ -2,7 +2,7 @@ import { Text, View, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 import { config } from "@repo/common";
-import { Button } from "@/components";
+import { Button } from "@components";
 
 export default function App() {
   return (

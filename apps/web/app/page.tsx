@@ -1,7 +1,7 @@
 "use client";
 
 import { config } from "@repo/common";
-import { Button } from "@/components/ui";
+import { Button } from "@components";
 
 export default function Web() {
   return (
