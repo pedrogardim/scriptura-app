@@ -2,7 +2,7 @@ import { Text, View, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 import { config } from "@repo/common";
-import { Button } from "@components";
+import { Button, Icon } from "@components";
 
 export default function App() {
   return (
@@ -12,6 +12,7 @@ export default function App() {
       </Text>
       <Button label={config.test} />
       <StatusBar style="auto" />
+      <Icon name="book-cross" />
     </View>
   );
 }
