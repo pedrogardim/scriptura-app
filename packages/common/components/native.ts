@@ -2,3 +2,4 @@
 export * from "./ui/atoms/Button/Button.native";
 export * from "./ui/atoms/Icon/Icon.native";
 export * from "./ui/atoms/Text/Text.native";
+export * from "./ui/atoms/Link/Link.native";
