@@ -1,13 +1,15 @@
 "use client";
 
-import { config } from "@repo/common";
-import { Button } from "@/components/ui";
+import { Button, Icon, Text } from "@components";
 
 export default function Web() {
   return (
-    <div className="bg-slate-800 flex flex-1 flex-col justify-center items-center h-screen text-white">
-      <span className="font-bold mb-5 text-3xl">Native</span>
+    <div className="bg-slate-300 flex flex-1 flex-col text-gray-500">
+      <Text bold className="text-4xl">
+        Web
+      </Text>
       <Button label="lol" />
+      <Icon name="book-cross" />
     </div>
   );
 }
