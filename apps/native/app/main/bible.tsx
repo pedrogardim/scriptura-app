@@ -6,9 +6,9 @@ import { Button, Icon, Text } from "@components";
 
 export default function App() {
   return (
-    <View className="flex-1 justify-center items-center bg-primary">
-      <Text bold className="text-white text-4xl">
-        Native
+    <View className="flex-1 justify-center items-center bg-white">
+      <Text bold className="text-black text-4xl">
+        This is bible
       </Text>
       <Button label={config.test} />
       <StatusBar style="auto" />
