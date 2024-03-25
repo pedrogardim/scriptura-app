@@ -5,15 +5,17 @@ import {
   Nunito_400Regular,
   Nunito_400Regular_Italic,
   Nunito_700Bold,
+  Nunito_900Black,
 } from "@expo-google-fonts/nunito";
 
-// SplashScreen.preventAutoHideAsync();
+export const unstable_settings = { initialRouteName: "main" };
 
 export default function Layout() {
   const [fontsLoaded, fontError] = useFonts({
     Nunito_700Bold,
     Nunito_400Regular,
     Nunito_400Regular_Italic,
+    Nunito_900Black,
   });
 
   if (!fontsLoaded && !fontError) {

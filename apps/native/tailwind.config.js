@@ -9,11 +9,14 @@ module.exports = {
     "../../packages/common/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    ...sharedConfig.theme,
     extend: {
+      ...sharedConfig.theme.extend,
       fontFamily: {
         sans: ["Nunito_400Regular", "sans-serif"],
-        "sans-bold": ["Nunito_700Bold", "sans-serif"],
         "sans-italic": ["Nunito_400Regular_Italic", "sans-serif"],
+        "sans-black": ["Nunito_900Black", "sans-serif"],
+        "sans-bold": ["Nunito_700Bold", "sans-serif"],
       },
     },
   },
