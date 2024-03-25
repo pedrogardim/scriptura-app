@@ -6,7 +6,12 @@ type ExtractIconType<T> =
 
 export type MaterialIconType = ExtractIconType<typeof MaterialCommunityIcon>;
 
-export type AllowedIcons = "book-cross" | "magnify" | "library";
+export type AllowedIcons =
+  | "book-cross"
+  | "magnify"
+  | "library"
+  | "home"
+  | "library-shelves";
 
 export interface IconProps {
   name: AllowedIcons;

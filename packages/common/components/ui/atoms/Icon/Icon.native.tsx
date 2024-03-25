@@ -2,9 +2,9 @@ import type { IconType } from "./Icon.common";
 
 import MaterialCommunityIcon from "@expo/vector-icons/MaterialCommunityIcons";
 
-export const Icon: IconType = ({ style, name }) => {
+export const Icon: IconType = ({ style, name, size }) => {
   const defaultStyles = {
-    fontSize: 24,
+    fontSize: size || 24,
     color: "white",
   };
   const parsedStyle = {
@@ -12,6 +12,5 @@ export const Icon: IconType = ({ style, name }) => {
     ...(style &&
       (style.flat(Infinity) as object[]).reduce((a, b) => ({ ...a, ...b }))),
   };
-
   return <MaterialCommunityIcon name={name} style={parsedStyle} />;
 };
