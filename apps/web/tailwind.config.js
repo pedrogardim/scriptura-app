@@ -10,7 +10,9 @@ module.exports = {
     "../../packages/common/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    ...sharedConfig.theme,
     extend: {
+      ...sharedConfig.theme.extend,
       fontFamily: {
         sans: ["var(--font-nunito)"],
       },

@@ -22,7 +22,7 @@ export const Navigation: NavigationType = ({
         "flex flex-row py-1 sm:flex-col",
         "bg-white border-t border-gray-200 sm:border-r sm:border-t-0",
         "w-full sm:w-fit",
-        "sm:gap-2 sm:py-3 sm:px-4 sm:min-w-40",
+        "sm:gap-2 sm:py-3 sm:px-4",
         "order-1 sm:order-none"
       )}
       style={style}
@@ -34,25 +34,24 @@ export const Navigation: NavigationType = ({
           <Link
             key={opt.value}
             href={opt.value}
-            // onPress={handleChange(opt.value, index)}
             className={clsx("flex-1 sm:flex-none")}
           >
             <div
               className={clsx(
                 "hover:bg-gray-100 rounded-lg",
-                "flex flex-1 ",
+                "flex flex-1",
                 "flex-col sm:flex-row",
                 "justify-center sm:justify-start items-center",
-                "sm:gap-2 sm:px-2 sm:py-1"
+                "sm:gap-3 sm:px-2 sm:py-1"
               )}
             >
               {opt.icon && (
                 <Icon
                   name={opt.icon}
-                  size={24}
                   className={clsx(
                     "self-center",
                     selected ? "text-primary" : "text-gray-400"
+                    // "h-6 w-6 sm:h-7 sm:w-7"
                   )}
                 />
               )}
@@ -61,7 +60,7 @@ export const Navigation: NavigationType = ({
                 <Text
                   bold
                   className={clsx(
-                    "text-[10px] sm:text-md",
+                    "text-[10px] sm:text-sm",
                     selected ? "text-primary" : "text-gray-400"
                   )}
                 >
