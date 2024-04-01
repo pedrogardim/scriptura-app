@@ -32,10 +32,10 @@ export const Container: React.FC<ContainerProps> = ({
   const WrapperComponent = avoidKeyboard ? KeyboardAvoidingView : View;
 
   return (
-    <WrapperComponent className="flex-1 bg-background" behavior="padding">
+    <WrapperComponent className="flex-1" behavior="padding">
       <ViewComponent
         style={style}
-        className={clsx("flex-1 bg-background", padding && "p-4")}
+        className={clsx("flex-1", padding && "p-4")}
         {...props}
       >
         {children}

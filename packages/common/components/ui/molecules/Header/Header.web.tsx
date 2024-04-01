@@ -12,7 +12,7 @@ export const Header: HeaderType = () => {
     <header
       className={clsx(
         "hidden sm:flex items-center",
-        "h-12 px-4 w-screen bg-white",
+        "h-14 px-4 w-screen bg-white",
         "border-gray-200 border-b"
       )}
     >
