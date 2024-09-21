@@ -1,4 +1,6 @@
-import { SplashScreen, Slot } from "expo-router";
+import { Slot } from "expo-router";
+
+import { StoreProvider } from "@repo/common/store";
 
 import {
   useFonts,
@@ -30,5 +32,9 @@ export default function Layout() {
     headerShown: false,
   };
 
-  return <Slot screenOptions={stackOptions} />;
+  return (
+    <StoreProvider>
+      <Slot screenOptions={stackOptions} />
+    </StoreProvider>
+  );
 }

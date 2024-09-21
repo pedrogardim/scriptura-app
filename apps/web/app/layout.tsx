@@ -21,10 +21,12 @@ export default function RootLayout({
           <Header />
           <div
             id="content"
-            className="flex flex-1 w-full flex-col sm:flex-row box-border flex-nowrap"
+            className="flex flex-1 w-full flex-col sm:flex-row box-border flex-nowrap overflow-hidden"
           >
             <AppNavigation />
-            <main className="flex-1 flex">{children}</main>
+            <main className="flex-1 flex flex-col items-center overflow-y-scroll">
+              {children}
+            </main>
           </div>
         </div>
       </body>

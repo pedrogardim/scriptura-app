@@ -1,14 +1,8 @@
-"use client";
+import { Icon, Text } from "@components";
 
-import { Button, Icon, Text } from "@components";
-
-export default function Web() {
+export default async function Web() {
   return (
-    <div className="bg-slate-300 flex flex-1 flex-col text-gray-500">
-      <Text bold className="text-4xl">
-        Web
-      </Text>
-      <Button label="lol" />
+    <div className="flex flex-col items-center justify-center p-4 max-w-3xl">
       <Icon name="book-cross" />
     </div>
   );
